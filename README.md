@@ -1,5 +1,6 @@
 # dotfiles for rails
 
+git add .
 
 
 ## components
