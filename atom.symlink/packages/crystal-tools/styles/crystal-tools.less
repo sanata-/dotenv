@@ -1,0 +1,86 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.crystal-tools {
+  padding: 0px 4px;
+
+  h1 {
+    font-size: 1.2em;
+    margin: 4px 0px;
+  }
+
+  .process-view-location {
+    padding-right: 20px;
+  }
+
+  .close-icon {
+    right: 0;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  li:hover .close-icon {
+    visibility: visible;
+  }
+
+  .implementations-result-view {
+    ul { padding-left: 16px; }
+  }
+
+  .help, .error_output {
+    overflow-x: scroll;
+    max-width: 350px;
+    max-height: 600px;
+    overflow-y: scroll;
+  }
+
+  li {
+    .entries {
+      display: block;
+      overflow-x: scroll;
+      max-width: 350px;
+    }
+
+    .error_output {
+      display: none;
+    }
+
+    &.failed {
+      .entries {
+        display: none;
+        // font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+      }
+      .error_output {
+        display: block;
+        overflow-x: scroll;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+.crystal-tools-context-table {
+  background: @input-background-color;
+  color: @text-color;
+  font-family: @font-family;
+  font-size: @input-font-size;
+  border-spacing: 4px;
+  border-collapse: separate;
+  text-align: center;
+  width: 100%;
+
+  code {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.crystal-tools-context-table-header th {
+  border-bottom: 1px solid @pane-item-background-color
+}

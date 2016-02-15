@@ -1,0 +1,39 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Crystal Tools'
+      'submenu': [
+        {
+          'label': 'Context'
+          'command': 'crystal-tools:context'
+        },
+        {
+          'label': 'Implementations'
+          'command': 'crystal-tools:implementations'
+        }
+      ]
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Crystal Tools'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'crystal-tools:toggle'
+        },
+        {
+          'label': 'Context'
+          'command': 'crystal-tools:context'
+        },
+        {
+          'label': 'Implementations'
+          'command': 'crystal-tools:implementations'
+        }
+      ]
+    ]
+  }
+]
